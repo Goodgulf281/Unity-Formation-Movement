@@ -20,12 +20,31 @@ Copy the Scripts folder to your Unity Project.
 
 Usage:
 
-<to be included>
+A FormationGrid contains a list of FormationGridPoints which have an offset position (in the x-z plane) from the FormationGrid position. Units (for example animated characters) can be assigned to the FormationGrid and will be automatically assigned to a FormationGridPoint. 
+The FormationGrid will start following the FormationAnchor which contains the actual pathfinding components (AStarPathfinding or Navmesh).
+
+Quick start:
+* Create a scene with a terrain or a navmesh setup.
+* Create a layer "terrain" and assign the terrain or navmesh "floor" elements to this layer.
+* Select the menu item "Window - Formations - Add Formation Manager" or alternatively add an empty object and assign the FormationManager.cs script to it.
+* Select "AStar Pathfinding" or "Unity Navmesh" using the buttons on the Formation Manager.
+* Create a new formation by clicking on the "New Formation" button on the Formation Manager. It will be created in the middle of the scene. You can alternatively create two empty game objects for a FormationGrid and a FormationAchor and connect these two (anchor to formation grid using the inspector.
+* Don't forget to: set the grid type (see limitations below), the grid mask to the layer created above and the movement type to rigidbody or charactercontroller depending on which of both you have added to the units which will become part of the formation.
+* If the grid has a sound associated with it (although a better practice is to have individual units have sound associated) then don't forget to add the Audio Source next to the FormationGrid component.
+* Assign the objects to the grid using script, see the FormationSample.cs script. 
+* Set the grid to form by using ChangeState(FormationStates.Form) on the formationgrid.
+* Set the grid to move by using ChangeState(FormationStates.Move) on the formationgrid.
+
+The key scripts to look into first are: FormationSample.cs, FormationGrid.cs and FormationAnchor.cs.
+
+
+
+A video instruction will follow soon.
 
 Limitation:
 
 * Currently the setup only supports movement of the units assigned to the grid if they have character controller or a rigidbody.
-* Not all of the selectable grid types have been implemented, only: <add here> 
+* Not all of the selectable grid types have been implemented, only: Box9, Wedge9 and Column10 (More to be added in FormationGrid.cs: SetupGrid(GridTypes gridtype)).
 
 License:
 
