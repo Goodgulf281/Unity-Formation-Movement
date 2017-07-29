@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Pathfinding.Util;
+//using Pathfinding.Util; // Code from A*Pathfinding
 using com.t7t.utilities;
 
 namespace com.t7t.formation
@@ -71,7 +71,7 @@ namespace com.t7t.formation
         {
             if (drawGizmos)
             {
-                Draw.Gizmos.CircleXZ(transform.position, range, Color.yellow);
+                // Draw.Gizmos.CircleXZ(transform.position, range, Color.yellow);
 
             }
         }
