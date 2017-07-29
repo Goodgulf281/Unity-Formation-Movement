@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using com.t7t.formation;
-using Pathfinding.Examples;
+//using Pathfinding.Examples; // Code from A*Pathfinding
 
 public class FormationSample : MonoBehaviour
 {
 
     public FormationGrid formationGrid;
-    public AstarSmoothFollow2 smoothFollow;
+    //public AstarSmoothFollow2 smoothFollow;
 
     // Use this for initialization
     void Start()
@@ -66,6 +66,9 @@ public class FormationSample : MonoBehaviour
             formationGrid.ChangeState(FormationStates.Form);
         }
 
+/* This code uses the Smooth follow script from A*Pathfinding. You can use it by simply including A*Pathfinding free
+ * and uncommenting this code (and above edits on lines 5 and 11
+
         if (Input.GetKeyUp(KeyCode.Alpha1))
         {
             smoothFollow.distance = 5;
@@ -81,7 +84,7 @@ public class FormationSample : MonoBehaviour
             smoothFollow.distance = 30;
             smoothFollow.height = 10;
         }
-
+*/
 
     }
 }
