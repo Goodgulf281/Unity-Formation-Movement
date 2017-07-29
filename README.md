@@ -19,6 +19,7 @@ Want to check what's possible with this code? Check out [my channel on Youtube](
 * Support for A Star Pathfinding free version (grid graph): now included.
 * Support for Unity Navmesh: now included.
 * Add random changes to gridpoints to prevent "perfect movement": now included.
+
 (Thanks Adam Goodrich for the feedback.)
 
 # Installation:
