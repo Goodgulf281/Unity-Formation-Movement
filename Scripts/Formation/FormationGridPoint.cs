@@ -300,7 +300,7 @@ namespace com.t7t.formation
             {
                 disbandDestination.y = hit.point.y + distanceToGround;
 
-                DebugPanel.Log("disband dest for "+this.id,"Disband",disbandDestination);
+                //DebugPanel.Log("disband dest for "+this.id,"Disband",disbandDestination);
                 //Debug.DrawLine(disbandDestination, position, Color.green);
             }
 
