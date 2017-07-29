@@ -6,13 +6,20 @@ Early on I found out that A Star Pathfinding by Aron Granberg (https://arongranb
 on Unity terrain. However it does not contain formation movement (also known as steering or flocking behavior) so I set out to create
 my own. So here we are.
 
-Youtube: https://www.youtube.com/playlist?list=PLNMba_kYUs0f9h-_BXizxOk5h2_e7A3ql
+Important to know:
+
+* This code is not perfect nor complete. Based on below instructions you should be able to make it work. Take a look at the limitations.
+* You need some basic knowledge of Navmesh. You can try this video: https://youtu.be/9amYqRFxW1o
+* Make sure you known enough about animation and understand this article: https://docs.unity3d.com/Manual/nav-CouplingAnimationAndNavigation.html
+
+Want to check what's possible with this code? Check out my channel on Youtube: https://www.youtube.com/playlist?list=PLNMba_kYUs0f9h-_BXizxOk5h2_e7A3ql
 
 Feedback received so far:
 
 * Support for A Star Pathfinding free version (grid graph): now included.
 * Support for Unity Navmesh: now included.
 * Add random changes to gridpoints to prevent "perfect movement": now included.
+(Thanks Adam Goodrich for the feedback.)
 
 Installation:
 
@@ -36,8 +43,6 @@ Quick start:
 * Set the grid to move by using ChangeState(FormationStates.Move) on the formationgrid.
 
 The key scripts to look into first are: FormationSample.cs, FormationGrid.cs and FormationAnchor.cs.
-
-
 
 A video instruction will follow soon.
 
