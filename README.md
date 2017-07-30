@@ -32,6 +32,7 @@ A FormationGrid contains a list of FormationGridPoints which have an offset posi
 The FormationGrid will start following the FormationAnchor which contains the actual pathfinding components (AStarPathfinding or Navmesh).
 
 ## Quick start:
+
 * Create a scene with a terrain or a navmesh setup.
 * Create a layer "terrain" and assign the terrain or navmesh "floor" elements to this layer.
 * Select the menu item "Window - Formations - Add Formation Manager" or alternatively add an empty object and assign the FormationManager.cs script to it.
@@ -46,7 +47,8 @@ The FormationGrid will start following the FormationAnchor which contains the ac
 The key scripts to look into first are: FormationSample.cs, FormationGrid.cs and FormationAnchor.cs.
 
 ## Instruction video
-A video instruction will follow soon.
+
+A video instruction can be found here:https://youtu.be/vU-vG1gqkdQ?list=PLNMba_kYUs0f9h-_BXizxOk5h2_e7A3ql
 
 # Limitations:
 
