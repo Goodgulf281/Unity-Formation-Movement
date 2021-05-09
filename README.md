@@ -1,6 +1,13 @@
 # Unity-Formation-Movement
 Formation movement for Unity3D using standard Navmesh or A*Pathfinding
 
+# New version available
+
+Please note a new version of the Formation Movement is available: [Formation Movement 2.0](https://github.com/Goodgulf281/Unity-Formation-Movement2.0)
+I will archive this version soon (it will remain to be available read-only).
+
+## Summary
+
 I've started gathering and configuring elements for Unity3D RTS style game which of course needs some pathfinding.
 Early on I found out that A Star Pathfinding by Aron Granberg (https://arongranberg.com/astar/front) is a good solution for pathfinding
 on Unity terrain. However it does not contain formation movement (also known as steering or flocking behavior) so I set out to create
